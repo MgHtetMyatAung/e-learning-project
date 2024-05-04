@@ -1,5 +1,7 @@
-import { Hero } from "../../components/courses";
+import { Hero,CourseList, CourseCard} from "../../components/courses";
+import { courses } from "../../components/courses/course-list";
 import { Container } from "../../components/layouts";
+
 
 export default function Courses() {
   const title = "Online Courses on Design and Development";
@@ -8,6 +10,14 @@ export default function Courses() {
   return (
     <Container>
       <Hero title={title} content={content} />
+
+      <CourseList>
+        {courses.map((course,i) => 
+             <CourseCard course={course} key={i}/>
+        )}
+       
+      </CourseList>
+  
     </Container>
   );
 }
