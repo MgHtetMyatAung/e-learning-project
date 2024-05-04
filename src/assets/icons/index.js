@@ -1,2 +1,12 @@
 export { default as Logo } from "./Logo.png";
 export { default as RightArrow } from "./right-arrow.png";
+export { default as Thander } from "./thander.png";
+export { default as TripleStick } from "./triple-stick.png";
+export { default as Adobe } from "./adobe.png";
+export { default as Amazon } from "./amazon.png";
+export { default as Notion } from "./notion.png";
+export { default as Spotify } from "./spotify.png";
+export { default as Zapier } from "./zapier.png";
+export { default as Zoom } from "./zoom.png";
+export { default as Netflix } from "./netflix.png";
+export { default as Play } from "./play.png";
