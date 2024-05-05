@@ -4,7 +4,7 @@ import CardAndButtons from './cardAndButtons/CardAndButtons'
 
 export default function SubContainer() {
   return (
-    <div className='col-span-1'>
+    <div className=' col-span-1 tablet:justify-center'>
       <TextContainer/>
       <CardAndButtons/>
     </div>
