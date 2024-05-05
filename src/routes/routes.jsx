@@ -1,4 +1,4 @@
-import { AboutUsPage, HomePage } from "../pages";
+import { AboutUsPage, HomePage, LoginPage } from "../pages";
 
 export const routes = [
   {
@@ -9,5 +9,9 @@ export const routes = [
     path: "/about-us",
     element: <AboutUsPage />,
   },
+  {
+    path: "/login",
+    element: <LoginPage />
+  }
   // add others
 ];
