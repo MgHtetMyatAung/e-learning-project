@@ -1,4 +1,4 @@
-import { AboutUsPage, HomePage ,CoursesPage} from "../pages";
+import { AboutUsPage, HomePage ,CoursesPage,CourseDetail} from "../pages";
 
 export const routes = [
   {
@@ -12,6 +12,9 @@ export const routes = [
   {
     path : "courses",
     element: <CoursesPage/>
+  },{
+    path : "courses/:courseId",
+    element : <CourseDetail/>
   }
   // add others
 ];

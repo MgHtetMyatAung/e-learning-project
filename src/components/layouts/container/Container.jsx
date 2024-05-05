@@ -1,6 +1,6 @@
 export default function Container({ children }) {
   return (
-    <div className="laptop:container tablet:container container">
+    <div className="container mx-auto">
       {children}
     </div>
   );
