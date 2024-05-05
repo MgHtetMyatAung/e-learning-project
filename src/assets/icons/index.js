@@ -1,2 +1,10 @@
 export { default as Logo } from "./Logo.png";
+export { default as Crown } from "./Vector (1).png";
+export { default as Medal } from "./Vector (2).png";
+export { default as FaceMask } from "./Vector (3).png";
+export { default as ThunderSign } from "./Vector (4).png";
+export { default as Book } from "./Vector (5).png";
+export { default as HashTag } from "./Vector (6).png";
+export { default as Bag } from "./Vector (7).png";
+export { default as Alert } from "./Vector.png";
 export { default as RightArrow } from "./right-arrow.png";
