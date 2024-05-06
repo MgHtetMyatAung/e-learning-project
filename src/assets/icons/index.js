@@ -3,3 +3,5 @@ export { default as RightArrow } from "./right-arrow.png";
 export {default as Left} from "./arrow-left.svg";
 export {default as ArrowRight} from "./arrow-right.svg"
 export {default as ArrowUpRight} from "./a-u-r.svg";
+export {default as GoogleLogo} from "./google.png";
+export {default as Eye} from "./eye.svg";

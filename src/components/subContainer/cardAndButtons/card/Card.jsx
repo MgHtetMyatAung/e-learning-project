@@ -21,7 +21,7 @@ export default function Card() {
          </div>
 
          <div>
-            <button className='rounded-lg bg-white-3 border-spacing-1 border-white-4 py-4 px-8 font-medium align-middle'>Read More</button>
+            <button className='rounded-lg bg-white-3 border-spacing-1 border-white-4 py-4 px-8 font-medium align-middle text-sm destop:text-lg'>Read Full Story</button>
          </div>
       </div>
 

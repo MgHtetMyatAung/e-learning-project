@@ -4,7 +4,7 @@ export default function Button({ className, label }) {
     <button
         className={` tablet:text-lg px-[20px] py-[10px] tablet:px-[25px] tablet:py-[12px] rounded-lg ${className}`}
       >
-      <Link to='/login'>
+      <Link to={`/${label.toLowerCase()}`}>
         {label}
       </Link>
       </button>
