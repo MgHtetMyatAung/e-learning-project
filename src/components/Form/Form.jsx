@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Form({title,formText,children}) {
   return (
-      <div className='container ml-auto col-span-1'>
+      <div className='container w-full laptop:w-1/2 tablet:w-4/6'>
          <form className='bg-white-1 rounded-lg p-6'>
 
             <div className=' text-center mb-5'>

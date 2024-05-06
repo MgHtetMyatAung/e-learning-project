@@ -6,7 +6,7 @@ export default function FormFooter({type,goto,checkText,gotoText}) {
   return (
     <>
       <div className=' gap-y-2 mb-5 gap-2 outline-none flex items-center'>
-               <input type="checkbox" id="checkbox" className=' h-6 w-6 inline-block outline-none bg-white-3 border-white-4'/>
+               <input type="checkbox" id="checkbox" className='h-6 w-6 inline-block bg-white-3 border-white-4'/>
                <label htmlFor='checkbox' className=' inline-block font-normal leading-6 text-grey-3'>{checkText}</label>
             </div>
 

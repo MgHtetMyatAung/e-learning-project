@@ -8,7 +8,7 @@ import FormFooter from '../../components/formFooter/FormFooter'
 export default function LoginPage() {
   return (
     <div className=' laptop:container tablet:container container text-sm tablet:text-base destop:text-lg'>
-      <div className='grid laptop:grid-cols-2 tablet:grid-cols-1 items-center gap-10 font-bevi mx-auto tablet:justify-end'>
+      <div className='flex flex-col-reverse tablet:flex-row items-center justify-center tablet:justify-between font-bevi mx-auto flex-wrap'>
         <SubContainer/>
         <Form 
         title='Login'
