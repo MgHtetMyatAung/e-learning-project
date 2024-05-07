@@ -37,9 +37,9 @@ export default function AboutUsPage() {
           content2={"Through our carefully crafted courses, we aim to"}
         />
       </div>
-      <div className="p-10 mb-16 tablet:items-center tablet:justify-between tablet:flex bg-white-1">
-        <div className="mb-8 tablet:mb-0">
-          <p className="text-3xl font-semibold max-w-[80%] pb-3 tablet:pb-0 ">
+      <div className="p-10 mb-16 laptop::items-center laptop::justify-between laptop::flex bg-white-1">
+        <div className="mb-8 laptop::mb-0">
+          <p className="text-3xl font-semibold max-w-[80%] pb-3 laptop::pb-0 ">
             <span className=" text-orange-8">Together</span>, let's shape the
             future of digital innovation
           </p>
