@@ -6,7 +6,7 @@ export default function CurriculumList({ children }) {
         <img src={courseDetailContainer} alt="cover img" />
       </div>
       {/* curri list  */}
-      <div className="grid tablet:grid-cols-2 grid-cols-1 gap-5">
+      <div className="grid laptop:grid-cols-2 grid-cols-1 gap-5">
         {/* single  curri */}
         {children}
      
