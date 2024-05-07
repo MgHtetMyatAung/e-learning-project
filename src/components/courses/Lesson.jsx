@@ -9,7 +9,7 @@ export default function Lesson({ lesson, i }) {
       : `${lesson.duration} minutes`;
   }
   return (
-    <li className="flex justify-between tablet:items-center tablet:gap-1 gap-7 tablet:flex-row flex-col p-4  shadow rounded-lg border-0 border-orange-6 hover:ring hover:ring-orange-4 hover:border hover:border-orange-6 transition-all duration-500">
+    <li className="flex justify-between tablet:items-center tablet:gap-1 gap-7 tablet:flex-row flex-col p-4  shadow rounded-lg border border-white-1  border-orange-6 hover:ring hover:ring-orange-4 hover:border hover:border-orange-6 transition-all duration-500">
       <div className="space-y-1 ">
         <h6 className="text-grey-7">{lesson.name}</h6>
         <p className="text-grey-4">Lesson 0{i + 1}</p>
