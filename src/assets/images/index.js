@@ -1,0 +1,11 @@
+export { default as Media } from "./media.png";
+export { default as Courses1 } from "./courses_1.png";
+export { default as Courses2 } from "./courses_2.png";
+export { default as Courses3 } from "./courses_3.png";
+export { default as Courses4 } from "./courses_4.png";
+export { default as Courses5 } from "./courses_5.png";
+export { default as Courses6 } from "./courses_6.png";
+export { default as Testi1 } from "./testi_1.png";
+export { default as Testi2 } from "./testi_2.png";
+export { default as Testi3 } from "./testi_3.png";
+export { default as Testi4 } from "./testi_4.png";
