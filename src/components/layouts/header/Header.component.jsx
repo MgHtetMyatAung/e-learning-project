@@ -2,11 +2,12 @@ import { NavLink } from "react-router-dom";
 import { navItems } from "./nav-items";
 import { Button } from "../../button";
 import { Logo, RightArrow } from "../../../assets/icons";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
-    <header className=" tablet:py-3">
-      <div className=" h-[40px] tablet:h-[55px] w-full tablet:w-[calc(100vw-50px)] bg-orange-8 mx-auto tablet:rounded-[8px]">
+    <header className=" laptop:py-3">
+      <div className=" h-[40px] tablet:h-[55px] w-full laptop:w-[calc(100vw-50px)] bg-orange-8 mx-auto laptop:rounded-[8px]">
         <div className=" h-full flex items-center gap-3 justify-center">
           <p className=" text-sm tablet:text-[18px] text-white-1">
             Free Courses 🌟 Sale Ends Soon, Get It Now
@@ -35,9 +36,12 @@ export default function Header() {
         </div>
 
         {/* buttons  */}
-        <div className="">
-          <Button label={"Sign Up"} />
-          <Button label={"Login"} className={" bg-orange-8 text-white-1"} />
+        <div className=" flex items-center gap-5">
+          <div>
+            <Button label={"Sign Up"} />
+            <Button label={"Login"} className={" bg-orange-8 text-white-1"} />
+          </div>
+          <MobileMenu />
         </div>
       </nav>
     </header>
