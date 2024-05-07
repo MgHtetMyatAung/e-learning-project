@@ -18,3 +18,4 @@ export { default as Cross } from "./cross.png";
 export { default as Cross_color } from "./cross_color.png";
 export { default as Right_circle_arrow } from "./right_arrow_circle.png";
 export { default as Plus } from "./plus.png";
+export { default as clock } from "./clock.svg";

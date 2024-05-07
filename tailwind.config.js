@@ -51,6 +51,7 @@ export default {
     container: {
       padding: {
         DEFAULT: "1rem",
+        
         laptop: "2rem",
         desktop: "4rem",
         monitor: "5rem",

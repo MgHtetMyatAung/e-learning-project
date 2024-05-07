@@ -5,11 +5,11 @@ export const navItems = [
   },
   {
     label: "Courses",
-    link: "/",
+    link: "/courses",
   },
   {
     label: "About Us",
-    link: "/",
+    link: "/about-us",
   },
   {
     label: "Pricing",
