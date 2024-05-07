@@ -17,6 +17,6 @@ export const navItems = [
   },
   {
     label: "Contact",
-    link: "/",
+    link: "/contactUs",
   },
 ];

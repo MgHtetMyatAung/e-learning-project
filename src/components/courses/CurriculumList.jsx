@@ -2,7 +2,7 @@ import { courseDetailContainer } from "../../assets/images/courses";
 export default function CurriculumList({ children }) {
   return (
     <>
-      <div className="py-20">
+      <div className="py-16">
         <img src={courseDetailContainer} alt="cover img" />
       </div>
       {/* curri list  */}

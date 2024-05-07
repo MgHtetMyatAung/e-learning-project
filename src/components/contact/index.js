@@ -1,0 +1,5 @@
+export {default as LableInput} from './LableInput.component'
+export {default as IconAndText} from './IconText.component'
+export {default as Contact} from './Contact'
+export {default as FormContainer} from './FormContainer.component'
+export {default as InfoContainer} from './InfoContainer.component'
