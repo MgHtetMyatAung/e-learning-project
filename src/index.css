@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+   .frompage-container {
+      @apply flex flex-col-reverse tablet:flex-row items-center justify-center font-bevi mx-auto flex-wrap tablet:justify-between
+   }
+   .carousel-btn {
+      @apply py-4 px-4 bg-white-1 rounded-lg border-white-4
+   }
+   .form-input-container {
+      @apply gap-y-2 mb-5
+   }
+   .input-label {
+      @apply mb-2 text-grey-7 font-medium leading-6 w-full
+   }
+}
