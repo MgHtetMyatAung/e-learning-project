@@ -13,7 +13,6 @@ export default function ContactUs() {
   return (
     <Container>
       <Hero title={title} content={content} />
-
       <Contact>
         <FormContainer />
         <InfoContainer />
