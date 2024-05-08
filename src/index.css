@@ -5,16 +5,19 @@
 @tailwind utilities;
 
 @layer components{
-   .frompage-container {
-      @apply flex flex-col-reverse tablet:flex-row items-center justify-center font-bevi mx-auto flex-wrap tablet:justify-between
+   .formpage-container {
+      @apply text-[14px] laptop:text-[16px] desktop:text-[18px] mx-auto laptop:w-[95%] w-full monitor:w-[90%] tablet:px-5 px-3 mt-[50px] tablet:mt-20 laptop:mt-24 max-w-[1400px]
+   }
+   .formpage {
+      @apply flex flex-col-reverse laptop:flex-row items-center justify-center font-bevi flex-wrap tablet:justify-between
    }
    .carousel-btn {
-      @apply py-4 px-4 bg-white-1 rounded-lg border-white-4
+      @apply p-[12px] bg-white-1 rounded-[6px] border-white-4 w-[54px] h-[54px] flex justify-center items-center
    }
    .form-input-container {
-      @apply gap-y-2 mb-5
+      @apply grid gap-y-[10px]
    }
    .input-label {
-      @apply mb-2 text-grey-7 font-medium leading-6 w-full
+      @apply text-grey-7 font-medium leading-6 w-full
    }
 }

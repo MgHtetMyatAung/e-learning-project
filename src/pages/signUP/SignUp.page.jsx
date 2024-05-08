@@ -8,8 +8,8 @@ import SignUpCheckText from '../../components/signupCheckText/SignUpCheckText'
 
 export default function SignUpPage() {
   return (
-   <div className=' destop:container tablet:container container text-sm tablet:text-base destop:text-lg'>
-   <div className='frompage-container'>
+   <div className='formpage-container'>
+   <div className='formpage'>
      <SubContainer/>
      <Form title='Sign Up' formText='Create an account to unlock exclusive features.'>
         <FormInput label='Full Name'/>

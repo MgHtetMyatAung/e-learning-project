@@ -4,7 +4,7 @@ import Buttons from './buttons/Buttons'
 
 export default function CardAndButtons() {
   return (
-    <div className='mt-8'>
+    <div className='grid desktop:gap-[30px] laptop:gap-y-[24px] tablet:gap-y-[10px]'>
       <Card/>
       <Buttons/>
     </div>

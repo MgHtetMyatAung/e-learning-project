@@ -36,8 +36,8 @@ export default function Header() {
 
         {/* buttons  */}
         <div className="">
-          <Button label={"Sign Up"} />
-          <Button label={"Login"} className={" bg-orange-8 text-white-1"} />
+          <Button label={"Sign Up"} page={'sign-up'} />
+          <Button label={"Login"} page={'login'} className={" bg-orange-8 text-white-1"} />
         </div>
       </nav>
     </header>
