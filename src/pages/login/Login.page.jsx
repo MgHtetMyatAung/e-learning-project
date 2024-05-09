@@ -7,7 +7,6 @@ import FormFooter from '../../components/formFooter/FormFooter'
 
 export default function LoginPage() {
   return (
-    <div className='formpage-container'>
       <div className='formpage'>
         <SubContainer/>
         <Form 
@@ -19,6 +18,5 @@ export default function LoginPage() {
           <FormFooter type='Login' goto='Sign Up' checkText='Remember Me' gotoText='Don’t have an account?'/>
         </Form>
       </div>
-    </div>
   )
 }

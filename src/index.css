@@ -5,11 +5,8 @@
 @tailwind utilities;
 
 @layer components{
-   .formpage-container {
-      @apply text-[14px] laptop:text-[16px] desktop:text-[18px] mx-auto laptop:w-[95%] w-full monitor:w-[90%] tablet:px-5 px-3 mt-[50px] tablet:mt-20 laptop:mt-24 max-w-[1400px]
-   }
    .formpage {
-      @apply flex flex-col-reverse laptop:flex-row items-center justify-center font-bevi flex-wrap tablet:justify-between
+      @apply container mx-auto flex flex-col-reverse laptop:flex-row items-center justify-center font-bevi flex-wrap tablet:justify-between mt-[50px] laptop:mt-[80px] desktop:mt-[100px]
    }
    .carousel-btn {
       @apply p-[12px] bg-white-1 rounded-[6px] border-white-4 w-[54px] h-[54px] flex justify-center items-center

@@ -8,7 +8,6 @@ import SignUpCheckText from '../../components/signupCheckText/SignUpCheckText'
 
 export default function SignUpPage() {
   return (
-   <div className='formpage-container'>
    <div className='formpage'>
      <SubContainer/>
      <Form title='Sign Up' formText='Create an account to unlock exclusive features.'>
@@ -22,6 +21,5 @@ export default function SignUpPage() {
      </Form>
 
    </div>
- </div>
   )
 }

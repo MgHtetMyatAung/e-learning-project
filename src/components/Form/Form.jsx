@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Form({title,formText,children}) {
   return (
-      <div className=' w-full laptop:w-[45%] tablet:w-[85%] flex justify-end'>
+      <div className=' w-full laptop:w-[45%] flex justify-end'>
          <form className='bg-white-1 rounded-[10px] p-[30px] laptop:p-[40px] w-full laptop:w-[85%] grid gap-[30px] laptop:gap-[40px] desktop:gap-[50px] '>
 
             <div className=' text-center grid gap-[8px] laptop:gap-[12px]'>
