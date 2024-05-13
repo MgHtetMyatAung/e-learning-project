@@ -1,7 +1,7 @@
 import './course-list'
 export default function CourseList({children}){
     return (
-        <div className="laptop:py-16 py-12 space-y-10">
+        <div className="flex flex-col desktop:gap-[50px] laptop:gap-[40px] gap-[20px]">
         {/* signle course  */}
          {children}
         </div>
