@@ -28,7 +28,7 @@ export default function CourseCard({ course }) {
         <div className="grid grid-cols-3 desktop:gap-[30px] laptop:gap-[20px] gap-[10px] desktop:rounded-[8px] laptop:rounded-[6px] rounded-[4px]">
           {Array.from({ length: 3 }, (_, i) => (
             <div key={i} className="">
-              <img
+              <img 
                 src={`/src/assets/images/courses/${course.img_name}${
                   i + 1
                 }.png`}
@@ -60,7 +60,7 @@ export default function CourseCard({ course }) {
               key={i}
               className={`laptop:col-span-1 col-span-5 space-y-2  ${
                 course.curriculums.length - 1 != i
-                  ? "laptop:border-r laptop:border-r-white-4 laptop:border-b-0  border-b border-b-white-4 laptop:p-0 pb-[20px]"
+                  ? "laptop:border-r laptop:border-r-white-4 laptop:border-b-0  border-b border-b-white-4 laptop:pb-0 pr-10 pb-[20px]"
                   : ""
               } `}
             >
