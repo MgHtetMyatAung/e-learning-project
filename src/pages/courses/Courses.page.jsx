@@ -1,5 +1,5 @@
 import { Hero, CourseList, CourseCard } from "../../components/courses";
-import { courses } from "../../components/courses/course-list";
+import { courses } from "../../data/CourseList";
 import { Container } from "../../components/layouts";
 
 export default function Courses() {

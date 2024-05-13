@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
-import { courses } from "../../components/courses/course-list";
+import { courses } from "../../data/CourseList";
 import { Container } from "../../components/layouts";
-import { Hero,CurriculumList, CurriculumCard } from "../../components/courses";
+import { Hero, CurriculumList, CurriculumCard } from "../../components/courses";
 
 export default function CourseDetail() {
   const { courseId } = useParams();
@@ -9,9 +9,9 @@ export default function CourseDetail() {
   return (
     <Container>
       <Hero title={course.title} content={course.content} />
-      <CurriculumList >
-      {course.curriculums.map((curr, i) => (
-         <CurriculumCard key={i} curr={curr} i={i}/>
+      <CurriculumList>
+        {course.curriculums.map((curr, i) => (
+          <CurriculumCard key={i} curr={curr} i={i} />
         ))}
       </CurriculumList>
     </Container>

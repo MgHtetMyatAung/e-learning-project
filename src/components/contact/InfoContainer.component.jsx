@@ -1,24 +1,15 @@
 import { IconAndText } from ".";
-import {
-    envlope,
-    facebook,
-    linkin,
-    phone,
-    subtract,
-    twitter,
-  } from "../../assets/icons";
-export default function InfoContainer(){
-    return(
-        <div className="laptop:p-20 p-10 space-y-16 laptop:col-span-1 col-span-3">
-        {/* card  */}
 
-        <IconAndText icons={[envlope]} label={"support@skillbridge.com"} />
-        <IconAndText icons={[phone]} label={"+91 00000 00000"} />
-        <IconAndText icons={[subtract]} label={"Some Where in the World"} />
-        <IconAndText
-          icons={[facebook, twitter, linkin]}
-          label={"Social Profiles"}
-        />
-      </div>
-    )
+
+import { contactList } from "../../data/ContactList";
+
+export default function InfoContainer() {
+  return (
+    <div className="desktop:space-y-[50px] laptop:space-y-[24px] space-y-[20px] laptop:col-span-1 col-span-3 desktop:p-[80px] laptop:p-[60px] p-[30px]">
+      {/* card  */}
+      {contactList.map((contact, index) => (
+        <IconAndText key={index} icons={contact.icons} label={contact.label} />
+      ))}
+    </div>
+  );
 }
