@@ -1,14 +1,14 @@
 import React from 'react'
-import { SubContainer } from '../../components/subContainer'
-import Form from '../../components/Form/Form'
-import FormInput from '../../components/formInput/FormInput'
-import PasswordInput from '../../components/passwordInput/PasswordInput'
-import FormFooter from '../../components/formFooter/FormFooter'
+import FormSubContainer from '../../components/LoginAndSignupComponents/FormSubContainer'
+import Form from '../../components/LoginAndSignupComponents/Form'
+import FormInput from '../../components/LoginAndSignupComponents/FormInput'
+import PasswordInput from '../../components/LoginAndSignupComponents/PasswordInput'
+import FormFooter from '../../components/LoginAndSignupComponents/FormFooter'
 
 export default function LoginPage() {
   return (
       <div className='formpage'>
-        <SubContainer/>
+        <FormSubContainer/>
         <Form 
         title='Login'
         formText='Welcome back! Please log in to access your account.'

@@ -4,16 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
+@layer components {
    .formpage {
-      @apply container mx-auto flex flex-col-reverse laptop:flex-row items-center justify-center font-bevi flex-wrap tablet:justify-between mt-[50px] laptop:mt-[80px] desktop:mt-[100px]
+      @apply container mx-auto flex flex-col-reverse laptop:flex-row items-center justify-center font-bevi flex-wrap tablet:justify-between my-[50px] laptop:my-[80px] desktop:my-[100px]
    }
+
    .carousel-btn {
-      @apply p-[12px] bg-white-1 rounded-[6px] border-white-4 w-[54px] h-[54px] flex justify-center items-center
+      @apply p-[12px] desktop:p-[14px] bg-white-1 rounded-[6px] border border-white-4 w-[54px] h-[54px] flex justify-center items-center
    }
+
    .form-input-container {
-      @apply grid gap-y-[10px]
+      @apply grid gap-y-[10px] desktop:gap-y-[14px]
    }
+
+   .input-wraper {
+      @apply p-[20px] laptop:p-[20px] desktop:p-[24px] rounded-[8px] desktop:rounded-[10px] border-white-4 border-[1px] bg-white-2
+   }
+
    .input-label {
       @apply text-grey-7 font-medium leading-6 w-full
    }
