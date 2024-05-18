@@ -5,6 +5,7 @@ import {
   CourseDetail,
   LoginPage,
   SignUpPage,
+  ContactUs,
 } from "../pages";
 
 export const routes = [
@@ -31,6 +32,10 @@ export const routes = [
   {
     path: "/sign up",
     element: <SignUpPage />,
+  },
+  {
+    path: "/contactUs",
+    element: <ContactUs />,
   },
   // add others
 ];
