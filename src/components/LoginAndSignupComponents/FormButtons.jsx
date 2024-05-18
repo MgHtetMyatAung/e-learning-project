@@ -1,7 +1,7 @@
 import React from 'react'
-import { ArrowRight, Left } from '../../../../assets/icons'
+import { ArrowRight, Left } from '../../assets/icons'
 
-export default function Buttons() {
+export default function FormButtons() {
   return (
     <div className='flex laptop:justify-end mt-6 justify-center'>
       <div className='flex gap-3'>
