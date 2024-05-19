@@ -9,7 +9,7 @@ export default function MobileMenu() {
     <div className=" laptop:hidden">
       <img src={MenuIcon} alt="menu" onClick={() => setOpenMenu(true)} />
       <nav
-        className={`fixed w-full h-[calc(100vh-40px)] tablet:h-[calc(100vh-55px)] bottom-0 ${
+        className={`fixed w-full z-50 h-[calc(100vh-40px)] tablet:h-[calc(100vh-55px)] bottom-0 ${
           openMenu ? "right-0" : "right-[-100%]"
         } bg-orange-8 transition-all duration-500`}
       >
@@ -23,7 +23,7 @@ export default function MobileMenu() {
           ))}
         </ul>
         <button
-          className=" absolute right-5 top-5 tablet:right-10"
+          className="absolute  right-5 top-5 tablet:right-10"
           onClick={() => setOpenMenu(false)}
         >
           <img src={CloseIcon} alt="close" />
