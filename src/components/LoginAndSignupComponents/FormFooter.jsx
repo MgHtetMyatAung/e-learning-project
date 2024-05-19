@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, GoogleLogo } from '../../assets/icons'
 
 export default function FormFooter({type,goto,checkText,gotoText}) {
+   let [isCheck,setIsCheck] = useState('false');
+   const handleCheckbox = () => {
+      if (isCheck) {
+         setIsCheck(false)
+      } else {
+         setIsCheck(true)
+      }
+   }
   return (
     <>
       <div className=' outline-none flex gap-x-[10px]  items-center'>
-               <input type="checkbox" id="checkbox" className='desktop:h-[30px] desktop:w-[30px] h-[24px] w-[24px] inline-block bg-white-3 border border-white-4 cursor-pointer -webkit-appearance-none -moz-appearance-none appearance-none rounded-[4px]'/>
+               <input type="checkbox" id="checkbox" className={`desktop:h-[30px] desktop:w-[30px] h-[24px] w-[24px] inline-block bg-white-3 border border-white-4 cursor-pointer ${isCheck ? "appearance-none": "appearance-auto"} rounded-[4px]`} onClick={handleCheckbox}/>
                <label htmlFor='checkbox' className=' inline-block font-normal leading-5 text-grey-3'>{checkText}</label>
             </div>
 
@@ -30,7 +38,7 @@ export default function FormFooter({type,goto,checkText,gotoText}) {
             </div>
 
             <div className=' text-center grid gap-[6px]'> 
-               <span className=' font-normal leading-[24px] desktop:leading-[27px]'>{gotoText}<Link to={`/${goto.toLowerCase()}`} className='font-medium leading-6 underline'> {goto}</Link><img src={ArrowUpRight} className=' inline-block w-[11px] h-[11px] ml-2'/></span>
+               <span className=' font-normal leading-[24px] desktop:leading-[27px]'>{gotoText}<Link to={`/${goto.toLowerCase()}`} className=' font-medium leading-[21px] laptop:leading-[24px] desktop:leading-[27px] underline text-center'> {goto}</Link><img src={ArrowUpRight} className=' inline-block w-[11px] h-[11px] ml-2'/></span>
             </div>
     </>
   )
