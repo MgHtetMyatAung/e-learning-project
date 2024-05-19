@@ -1,10 +1,10 @@
 export default function Testimonials({head, src, name}) {
   return (
     <div className="">
-        <div className=" desktop:p-[50px] p-[20px] rounded-t-[8px] bg-white-1">
+        <div className=" laptop:p-[50px] p-[30px] rounded-t-[10px] bg-white-1">
             <h1 className=" text-[15px] text-grey-5">{head}</h1>
         </div>
-        <div className="p-[20px] rounded-b-[8px] bg-white-2 flex justify-between">
+        <div className="laptop:px-[40px] laptop:py-[24px] px-[30px] py-[20px] items-center rounded-b-[10px] bg-white-2 flex justify-between">
             <div className="flex items-center gap-3">
                 <img className=" w-[50px] h-[50px] object-cover rounded-md" src={src} alt="" />
                 <h1 className="">{name}</h1>

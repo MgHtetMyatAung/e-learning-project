@@ -5,6 +5,7 @@ import {
   CourseDetail,
   LoginPage,
   SignUpPage,
+  PricePage,
 } from "../pages";
 
 export const routes = [
@@ -23,6 +24,10 @@ export const routes = [
   {
     path: "courses/:courseId",
     element: <CourseDetail />,
+  },
+  {
+    path : "/pricing",
+    element : <PricePage/>,
   },
   {
     path: "/login",

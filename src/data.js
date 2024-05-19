@@ -1,4 +1,4 @@
-import { Courses1, Courses2, Courses3, Courses4, Courses5, Courses6 } from "./assets/images"
+import { Courses1, Courses2, Courses3, Courses4, Courses5, Courses6, Testi1, Testi2, Testi3, Testi4 } from "./assets/images"
 
 const monthly = {
         normal :{
@@ -124,6 +124,33 @@ const benefits = [
     },
 ]
 
+const testimonials = [
+    {
+        id : 1,
+        head : "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
+        src : Testi1,
+        name : "Sarah L",  
+    },
+    {
+        id : 2,
+        head : "The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!",
+        src : Testi2,
+        name : "Jason M",  
+    },
+    {
+        id : 3,
+        head : "The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!",
+        src : Testi3,
+        name : "Emily R",  
+    },
+    {
+        id : 4,
+        head : "I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!",
+        src : Testi4,
+        name : "Michael K",  
+    }
+]
+
 const courses = [
     {
         id : 1,
@@ -183,4 +210,4 @@ const courses = [
 
     }
 ]
-export { monthly, yearly, FAQ, benefits, courses }
+export { monthly, yearly, FAQ, benefits, courses, testimonials }
