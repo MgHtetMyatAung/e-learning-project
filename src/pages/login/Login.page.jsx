@@ -13,7 +13,7 @@ export default function LoginPage() {
         title='Login'
         formText='Welcome back! Please log in to access your account.'
         >
-          <FormInput label='Emial'/>
+          <FormInput label='Emial' type={'email'} />
           <PasswordInput/>
           <FormFooter type='Login' goto='Sign Up' checkText='Remember Me' gotoText='Don’t have an account?'/>
         </Form>

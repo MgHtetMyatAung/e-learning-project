@@ -11,8 +11,8 @@ export default function SignUpPage() {
    <div className='formpage'>
      <FormSubContainer/>
      <Form title='Sign Up' formText='Create an account to unlock exclusive features.'>
-        <FormInput label='Full Name'/>
-        <FormInput label='Email'/>
+        <FormInput label='Full Name' type='text' />
+        <FormInput label='Email' type='email' />
         <PasswordInput type={false}/>
         <FormFooter type='Sing Up' goto='Login' 
         checkText={<SignUpCheckText/>}

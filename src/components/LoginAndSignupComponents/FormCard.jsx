@@ -17,11 +17,11 @@ export default function FormCard() {
             <div className='w-[50px] h-[50px] desktop:w-[60px] desktop:h-[60px] rounded-[6px] desktop:rounded-[8px] overflow-hidden mr-3'>
                <img src={CardImg} alt='cardImg' className='w-full h-full object-cover'/>
             </div>
-            <span className='font-semibold tablet:text-md text-grey-6 text-[16px] desktop:text-[18px] leading-[24px] desktop:leading-[27px]'>Sarah L</span>
+            <span className='font-semibold tablet:text-md text-grey-6 text-[16px] desktop:text-[18px] leading-[24px] desktop:leading-[27px] text-nowrap'>Sarah L</span>
          </div>
 
          <div>
-            <button className='rounded-[8px] bg-white-3 border border-white-4 py-[14px] px-[16px] desktop:py-[18px] desktop:px-[24px] font-medium align-middle text-[14px] destop:text-[18px] leading-[21px] desktop:leading-[27px]'>Read Full Story</button>
+            <button className='rounded-[8px] bg-white-3 border border-white-4 py-[14px] px-[16px] desktop:py-[18px] desktop:px-[24px] font-medium align-middle text-[14px] desktop:text-[18px] leading-[21px] desktop:leading-[27px] text-nowrap'>Read Full Story</button>
          </div>
       </div>
 
