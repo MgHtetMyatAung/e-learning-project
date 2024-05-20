@@ -3,10 +3,50 @@ import { navItems } from "./nav-items";
 import { Button } from "../../button";
 import { Logo, RightArrow } from "../../../assets/icons";
 import MobileMenu from "./MobileMenu";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isHeaderHidden, setIsHeaderHidden] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Optional: for smooth scrolling
+    });
+  };
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      // Scrolling down
+      setIsHeaderHidden(true);
+    } else {
+      // Scrolling up
+      setIsHeaderHidden(false);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className=" laptop:py-3">
+    <header
+      className={`bg-white-1 laptop:py-3 sticky z-30 transition-all duration-500 ${
+        isHeaderHidden
+          ? "top-[-40px] tablet:top-[-55px] laptop:top-[-67px]"
+          : "top-[-1px] shadow"
+      } shadow-sm`}
+    >
       <div className=" h-[40px] tablet:h-[55px] w-full laptop:w-[calc(100vw-50px)] bg-orange-8 mx-auto laptop:rounded-[8px]">
         <div className=" h-full flex items-center gap-3 justify-center">
           <p className=" text-sm tablet:text-[18px] text-white-1">
@@ -19,7 +59,7 @@ export default function Header() {
           />
         </div>
       </div>
-      <nav className=" container mx-auto py-3 flex items-center justify-between">
+      <nav className=" container mx-auto py-3 flex items-center justify-between ">
         <div className=" flex items-center gap-[50px]">
           <img
             src={Logo}
@@ -28,7 +68,12 @@ export default function Header() {
           />
           <ul className=" hidden laptop:flex items-center gap-[30px]">
             {navItems.map(({ label, link }) => (
-              <NavLink key={label} to={link} className=" tablet:text-lg">
+              <NavLink
+                key={label}
+                to={link}
+                className=" tablet:text-lg"
+                onClick={scrollToTop}
+              >
                 {label}
               </NavLink>
             ))}
@@ -45,7 +90,7 @@ export default function Header() {
               className={" bg-orange-8 text-white-1"}
             />
           </div>
-          <MobileMenu />
+          <MobileMenu handleScroll={scrollToTop} />
         </div>
       </nav>
     </header>
