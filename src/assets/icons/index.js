@@ -38,3 +38,4 @@ export { default as subtract } from "./Subtract.png";
 export { default as facebook } from "./facebook.png";
 export { default as twitter } from "./twitter.png";
 export { default as linkin } from "./linkin.png";
+export { default as HideEye } from "./hide-password.svg";
