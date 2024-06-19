@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <footer className=" bg-white-1">
       <Container>
-        <div className=" pt-[50px] desktop:pt-[100px] grid laptop:grid-cols-2 gap-[40px]">
-          <div>
+        <div className=" pt-[50px] desktop:pt-[100px] flex flex-col laptop:flex-row gap-[40px]">
+          <div className=" w-full laptop:w-5/12">
             <img
               src={Logo}
               alt=""
@@ -41,7 +41,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className=" grid grid-cols-2 tablet:grid-cols-3 gap-[30px]">
+          <div className=" w-full laptop:w-7/12 grid grid-cols-2 tablet:grid-cols-3 gap-[30px] tablet:gap-[10px]">
             <div className=" space-y-3">
               <h3 className=" text-lg desktop:text-[20px] text-grey-7 font-semibold">
                 Home
@@ -77,26 +77,26 @@ export default function Footer() {
               <h3 className=" text-lg desktop:text-[20px] text-grey-7 font-semibold">
                 Social Profiles
               </h3>
-              <div className=" flex gap-4">
+              <div className=" flex gap-3">
                 <div className=" w-[44px] h-[44px] tablet:w-[52px] tablet:h-[52px] rounded-lg bg-white-2 border border-white-4 grid place-items-center">
                   <img
                     src={facebook}
                     alt=""
-                    className=" w-[20px] h-[20px] target:w-[24px] tablet:h-[24px]"
+                    className=" w-[20px] target:w-[24px] "
                   />
                 </div>
                 <div className=" w-[44px] h-[44px] tablet:w-[52px] tablet:h-[52px] rounded-lg bg-white-2 border border-white-4 grid place-items-center">
                   <img
                     src={twitter}
                     alt=""
-                    className=" w-[20px] h-[20px] target:w-[24px] tablet:h-[24px]"
+                    className=" w-[20px] target:w-[24px] "
                   />
                 </div>
                 <div className=" w-[44px] h-[44px] tablet:w-[52px] tablet:h-[52px] rounded-lg bg-white-2 border border-white-4 grid place-items-center">
                   <img
                     src={linkin}
                     alt=""
-                    className=" w-[20px] h-[20px] target:w-[24px] tablet:h-[24px]"
+                    className=" w-[20px]  target:w-[24px] "
                   />
                 </div>
               </div>
